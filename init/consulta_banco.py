@@ -8,7 +8,7 @@ query = sql.text(
 )
 
 result = conn.execute(query).fetchall()
-print(result)
+for x in result: print(x)
  
 
 query = sql.text(
@@ -16,4 +16,4 @@ query = sql.text(
 )
 
 result = conn.execute(query).fetchall()
-print(result)
+for x in result: print(x)
