@@ -1,7 +1,3 @@
-import os
-print(os.getcwd())
-
-
 import pytest
 from src.models.settings.connection import db_connection_handler  
 from .events_repository import EventsRepository
