@@ -9,7 +9,7 @@ class EventHandle:
 
     def register(self, http_request: HttpRequest) -> HttpResponse:
         body = http_request.body
-        body['uuid'] = str(uuid.uuid4)
+        body['uuid'] = str(uuid.uuid4())
         self.__event_repository.insert_event(body)
 
         return HttpResponse(
